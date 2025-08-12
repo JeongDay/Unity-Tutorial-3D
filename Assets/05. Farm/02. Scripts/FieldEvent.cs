@@ -3,14 +3,11 @@ using UnityEngine;
 
 public class FieldEvent : MonoBehaviour
 {
-    [SerializeField] private CinemachineClearShot clearShot; // 관리 카메라
-    
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            clearShot.ChildCameras[0].Priority = 1;
-            clearShot.ChildCameras[1].Priority = 10;
+            GameManager.Instance.SetCameraState(CameraState.Field);
         }
     }
 
@@ -18,8 +15,7 @@ public class FieldEvent : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            clearShot.ChildCameras[0].Priority = 10;
-            clearShot.ChildCameras[1].Priority = 1;
+            GameManager.Instance.SetCameraState(CameraState.Outside);
         }
     }
 }

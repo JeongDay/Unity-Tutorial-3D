@@ -3,14 +3,11 @@ using UnityEngine;
 
 public class AnimalEvent : MonoBehaviour
 {
-    [SerializeField] private CinemachineClearShot clearShot;
-    
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            clearShot.ChildCameras[0].Priority = 1;
-            clearShot.ChildCameras[3].Priority = 10;
+            GameManager.Instance.SetCameraState(CameraState.Animal);
         }
     }
 
@@ -18,8 +15,7 @@ public class AnimalEvent : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            clearShot.ChildCameras[0].Priority = 10;
-            clearShot.ChildCameras[3].Priority = 1;
+            GameManager.Instance.SetCameraState(CameraState.Outside);
         }
     }
 }
