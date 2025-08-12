@@ -1,16 +1,16 @@
 using Unity.Cinemachine;
 using UnityEngine;
 
-public class FieldEvent : MonoBehaviour
+public class AnimalEvent : MonoBehaviour
 {
-    [SerializeField] private CinemachineClearShot clearShot; // 관리 카메라
+    [SerializeField] private CinemachineClearShot clearShot;
     
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             clearShot.ChildCameras[0].Priority = 1;
-            clearShot.ChildCameras[1].Priority = 10;
+            clearShot.ChildCameras[3].Priority = 10;
         }
     }
 
@@ -19,7 +19,7 @@ public class FieldEvent : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             clearShot.ChildCameras[0].Priority = 10;
-            clearShot.ChildCameras[1].Priority = 1;
+            clearShot.ChildCameras[3].Priority = 1;
         }
     }
 }
