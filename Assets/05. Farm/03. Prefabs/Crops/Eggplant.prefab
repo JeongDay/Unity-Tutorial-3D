@@ -150,3 +150,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fcf32ff828c5384aa8cc922b7008174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  name: EggPlant
+  icon: {fileID: 21300000, guid: 25b6642abcd482f48b0bf8d3be210bd4, type: 3}

@@ -23,6 +23,16 @@ public class Plant : MonoBehaviour
       // Time.deltTime : 시간 조각
    }
 
+   void OnEnable()
+   {
+      WeatherSystem.weatherAction += SetGrowth;
+   }
+
+   void OnDisable()
+   {
+      WeatherSystem.weatherAction -= SetGrowth;  
+   }
+
    IEnumerator Start()
    {
       SetState(PlantState.Level1);
@@ -53,6 +63,22 @@ public class Plant : MonoBehaviour
             transform.GetChild(i).gameObject.SetActive(false);
 
          transform.GetChild((int)plantState).gameObject.SetActive(true);
+      }
+   }
+
+   private void SetGrowth(WeatherType weatherType)
+   {
+      switch (weatherType)
+      {
+         case WeatherType.Sun:
+            // 성장 최대
+            break;
+         case WeatherType.Rain:
+            // 성장 중간
+            break;
+         case WeatherType.Snow:
+            // 성장 최소
+            break;
       }
    }
 }

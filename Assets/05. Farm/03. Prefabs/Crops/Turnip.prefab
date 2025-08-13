@@ -151,3 +151,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fcf32ff828c5384aa8cc922b7008174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  name: Turnip
+  icon: {fileID: 21300000, guid: 772ab606c56d771408b4fefe2af760dc, type: 3}

@@ -126,7 +126,7 @@ public class FieldManager : MonoBehaviour
         for (int i = 0; i < ranAmount; i++)
         {
             GameObject crop = Instantiate(crops[index]);
-            crop.transform.position = pos;
+            crop.transform.position = pos + Vector3.up * 0.5f;
             Rigidbody cropRb = crop.GetComponent<Rigidbody>();
 
             float ranX = Random.Range(-2f, 2f);
