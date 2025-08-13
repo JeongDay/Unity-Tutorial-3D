@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d9e13a08f44f624f83eddd8118938e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  plantIndex: 0
   isHarvest: 0
 --- !u!1 &79642320808259974
 GameObject:
@@ -665,11 +666,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6049424342780446343, guid: 00f612072596c9447b1fd63618eb9753, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.29999998
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6049424342780446343, guid: 00f612072596c9447b1fd63618eb9753, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6049424342780446343, guid: 00f612072596c9447b1fd63618eb9753, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.29999998
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6049424342780446343, guid: 00f612072596c9447b1fd63618eb9753, type: 3}
       propertyPath: m_LocalPosition.x
