@@ -13,9 +13,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Button seedButton;
     [SerializeField] private Button harvestButton;
     [SerializeField] private Button[] plantButtons;
-
-    private FieldManager.FieldState tempFieldState;
-
+    
     void Awake()
     {
         seedButton.onClick.AddListener(OnSeedButton);
@@ -33,19 +31,6 @@ public class UIManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I))
         {
             inventoryUI.SetActive(!inventoryUI.activeSelf);
-
-            if (GameManager.Instance.field.fieldState != FieldManager.FieldState.None)
-            {
-                if (inventoryUI.activeSelf) // 인벤토리 켜져있을 경우
-                {
-                    tempFieldState = GameManager.Instance.field.fieldState;
-                    GameManager.Instance.field.fieldState = FieldManager.FieldState.None;
-                }
-                else
-                {
-                    GameManager.Instance.field.fieldState = tempFieldState;
-                }
-            }
         }
     }
 

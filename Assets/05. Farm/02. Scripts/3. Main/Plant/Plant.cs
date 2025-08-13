@@ -66,6 +66,7 @@ public class Plant : MonoBehaviour
       }
    }
 
+   // 예시. 날씨에 따라 성장 파라미터 변경
    private void SetGrowth(WeatherType weatherType)
    {
       switch (weatherType)
