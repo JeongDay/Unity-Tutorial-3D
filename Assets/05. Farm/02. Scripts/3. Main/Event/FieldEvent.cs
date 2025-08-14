@@ -8,7 +8,6 @@ public class FieldEvent : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             GameManager.Instance.SetCameraState(CameraState.Field);
-            // FieldManager의 FieldState도 변경 필요
             GameManager.Instance.ui.ActivateFieldUI(true);
         }
     }
@@ -18,7 +17,7 @@ public class FieldEvent : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             GameManager.Instance.SetCameraState(CameraState.Outside);
-            // FieldManager의 FieldState도 변경 필요
+            GameManager.Instance.field.fieldState = FieldManager.FieldState.None;
             GameManager.Instance.ui.ActivateFieldUI(false);
         }
     }

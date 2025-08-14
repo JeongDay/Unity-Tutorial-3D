@@ -12,6 +12,11 @@ public class Crop : MonoBehaviour
     {
         useAction += Use;
     }
+
+    void OnDisable()
+    {
+        useAction = null;
+    }
     
     private void OnTriggerEnter(Collider other)
     {
@@ -23,8 +28,6 @@ public class Crop : MonoBehaviour
 
     public void Get()
     {
-        // 인벤토리에 작물 추가
-
         if (GameManager.Instance.item.CheckItemCount())
         {
             GameManager.Instance.item.GetItem(this);
