@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,16 +13,15 @@ public class Single_BoardController : MonoBehaviour
     private Single_BoardTicTacToe gameBoard;
     private Single_Cell[,] cells = new Single_Cell[3, 3];
 
+    public static Action startAction;
+
     void Awake()
     {
         restartButton.onClick.AddListener(StartGame);
+
+        startAction += StartGame;
     }
     
-    void Start()
-    {
-        StartGame();
-    }
-
     private void StartGame()
     {
         gameBoard = new Single_BoardTicTacToe();

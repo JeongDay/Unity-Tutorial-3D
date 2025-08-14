@@ -20,8 +20,10 @@ public class WeatherSystem : MonoBehaviour
     {
         while (true)
         {
+            // 날씨에 따라 환경음 재생
             yield return new WaitForSeconds(15f);
-
+            // 환경음 종료
+            
             int weatherCount = Enum.GetValues(typeof(WeatherType)).Length;
 
             int ranIndex = Random.Range(0, weatherCount);
