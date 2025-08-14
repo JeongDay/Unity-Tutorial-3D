@@ -828,18 +828,6 @@ Assets/TerrainDemoScene_URP/Settings.meta
 Assets/TerrainDemoScene_URP/Settings/Lighting.meta
 Assets/TerrainDemoScene_URP/Settings/Lighting/TerrainDemo.lighting
 Assets/TerrainDemoScene_URP/Settings/Lighting/TerrainDemo.lighting.meta
-Assets/TerrainDemoScene_URP/Settings/Noise.meta
-Assets/TerrainDemoScene_URP/Settings/Noise/3DFractal_Noise_01.tga
-Assets/TerrainDemoScene_URP/Settings/Noise/3DFractal_Noise_01.tga.meta
-Assets/TerrainDemoScene_URP/Settings/URP.meta
-Assets/TerrainDemoScene_URP/Settings/URP/Universal Render Pipeline Asset_Renderer.asset
-Assets/TerrainDemoScene_URP/Settings/URP/Universal Render Pipeline Asset_Renderer.asset.meta
-Assets/TerrainDemoScene_URP/Settings/URP/UniversalRenderPipelineGlobalSettings.asset
-Assets/TerrainDemoScene_URP/Settings/URP/UniversalRenderPipelineGlobalSettings.asset.meta
-Assets/TerrainDemoScene_URP/Settings/URP/URP-HighQuality Pipeline Asset.asset
-Assets/TerrainDemoScene_URP/Settings/URP/URP-HighQuality Pipeline Asset.asset.meta
-Assets/TerrainDemoScene_URP/Settings/URP/URP-LowQuality Pipeline Asset.asset
-Assets/TerrainDemoScene_URP/Settings/URP/URP-LowQuality Pipeline Asset.asset.meta
 Assets/TerrainDemoScene_URP/Terrain/Data.meta
 Assets/TerrainDemoScene_URP/Terrain/Data/Terrain_0_0_8723fb12-db1c-4ba2-97c5-90e784c8adbf 1.asset
 Assets/TerrainDemoScene_URP/Terrain/Data/Terrain_0_0_8723fb12-db1c-4ba2-97c5-90e784c8adbf 1.asset.meta
